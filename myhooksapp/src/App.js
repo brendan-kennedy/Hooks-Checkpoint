@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import ProductCard from './components/ProductCard'
 import ItemList from './components/itemlist'
-
+import './App.css'
 
 function App() {
 
