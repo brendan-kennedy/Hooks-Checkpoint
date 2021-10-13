@@ -20,7 +20,7 @@ useEffect(() => {
 
 
 const displayProductCard = () => { 
-  setShow({show: true})
+  setShow({show : !show})
  }
 
 
