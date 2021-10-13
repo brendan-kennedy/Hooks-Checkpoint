@@ -1,8 +1,7 @@
 .App {
   text-align: center;
 }
-
-
 .product-card{ 
   border-color: black;
+  border-radius: 500px;
 }

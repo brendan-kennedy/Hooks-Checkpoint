@@ -5,6 +5,7 @@ import './App.css'
 function App() {
 
 const [itemList, setitemList] = useState(null)
+const [show, setShow] = useState(false)
 
 useEffect(() => {
   fetch('http://52.26.193.201:3000/products/list')
@@ -18,8 +19,8 @@ useEffect(() => {
 }, [])
 
 
-const displayProductCard = (itemList, id) => { 
-
+const displayProductCard = () => { 
+  setShow({show: true})
  }
 
 
@@ -32,7 +33,7 @@ const displayProductCard = (itemList, id) => {
 return (
   <div className="App">
     <h1 className = {'title'} >Store Stuff</h1>
-   <p>  {itemList && <ItemList itemList = {itemList} displayProductCard = {displayProductCard}  />} </p> 
+   <p>  {itemList && <ItemList itemList = {itemList} displayProductCard = {displayProductCard} />} </p> 
    <p>  </p>
   </div>
 );
