@@ -1,9 +1,11 @@
-function ItemList({ itemList }) {
+import ProductCard from "./ProductCard";
+
+function ItemList({ itemList, displayProductCard }) {
     return (
       <div className="product-list">
       {itemList.map((item) => (
           <div key = {item.id} >
-          <button> {item.name} </button>
+          <ProductCard item = {item} />
           </div> 
       ))}
       </div>

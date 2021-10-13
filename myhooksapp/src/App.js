@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import ProductCard from './components/ProductCard'
 import ItemList from './components/itemlist'
 
+
 function App() {
 
 const [itemList, setitemList] = useState(null)
@@ -18,7 +19,9 @@ useEffect(() => {
 }, [])
 
 
- 
+const displayProductCard = (itemList, id) => { 
+
+ }
 
 
 
@@ -30,7 +33,8 @@ useEffect(() => {
 return (
   <div className="App">
     <h1 className = {'title'} >Store Stuff</h1>
-    {itemList && <ItemList itemList = {itemList} />} 
+   <p>  {itemList && <ItemList itemList = {itemList} displayProductCard = {displayProductCard}  />} </p> 
+   <p>  </p>
   </div>
 );
 }

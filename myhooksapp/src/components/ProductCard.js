@@ -1,11 +1,12 @@
-function ProductCard({ product }) {
+function ProductCard({ item }) {
     return (
       <div className="product-card">
-        <div className="product-image">
-         
-        </div>
-        <div className="cat-name">{product.name}</div>
-      </div>
+       <h1 className="product-name">{item.name}</h1>
+       <div className="product-id">{item.id}</div>
+       <div className="product-slogan">{item.slogan}</div>
+       <div className="product-description">{item.description}</div>
+       <div className="product-default_price">{item.default_price}</div>
+      </div> 
     );
   }
   
