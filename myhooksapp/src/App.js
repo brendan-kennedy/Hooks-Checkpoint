@@ -19,11 +19,10 @@ useEffect(() => {
 }, [])
 
 function displayCard (item, id)  {
-  if(item.id === id){
+  
   setShow(!show)
-} else { 
+  console.log(item[id])
 
-}
 }
 
 return (
