@@ -8,6 +8,7 @@ function ProductCard({ item , displayCard, show }) {
        {show?<div className="product-slogan">{item.slogan}</div> : ''}
        {show?<div className="product-description">{item.description}</div> : ''}
        {show?<div className="product-default_price">{item.default_price}</div> : ''}
+       {show?<div className="product-image">{item.default_price}</div> : ''}
        </div>
       </div> 
     );
