@@ -18,22 +18,18 @@ useEffect(() => {
   }))
 }, [])
 
+function displayCard (item, id)  {
+  if(item.id === id){
+  setShow(!show)
+} else { 
 
-const displayProductCard = () => { 
-  setShow({show : !show})
- }
-
-
-
-
-
-
-
+}
+}
 
 return (
   <div className="App">
     <h1 className = {'title'} >Store Stuff</h1>
-   <p>  {itemList && <ItemList itemList = {itemList} displayProductCard = {displayProductCard} />} </p> 
+   <p>  {itemList && <ItemList itemList = {itemList} displayCard = {displayCard} show = {show} />} </p> 
    <p>  </p>
   </div>
 );
